@@ -1,0 +1,63 @@
+header {
+  background-color: #E4D0D0;
+  color: #867070;
+  border: 2px #D5B4B4 solid;
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+  font: bold 70px times;
+  text-shadow: 2px,2px, red;
+}
+
+#menu-toggle {
+  display: none; 
+}
+
+body {
+  font: normal 16px verdana;
+  background-color: #F5EBEB;
+  margin: 5px;
+}
+
+div label {
+  padding: 2%;
+  margin: 4px;
+}
+
+.costum column {
+  font: bold italic 16px verdana;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+
+img {
+  inline-size: 100%;
+  border-radius: 5%;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin: 4px;
+  padding: 5px;
+  background-color: #E4D0D0;
+  border:2px #D5B4B4 solid;
+  border-radius: 8%;
+}
+
+.row.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+body:after {
+content:"\00a9 Winc Winc Dating App sponserd by Lovesick Dating";
+}
+
