@@ -1,137 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winc Winc Dating App</title>
+    <link rel="stylesheet" type="text/css" href="./../css/signin.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Winc Winc Dating App</title>
-  <link rel="stylesheet" type="text/css" href="./../../style.css" />
-</head>
-
-<body>
-  <header>
-    <div>
-      <img src="./../../app/lovesick logo.jpeg" alt="breaking heart" width="100%" height="472" />
-      <h1>Winc Winc Dating App</h1>
-    </div>
-    <nav>
-      <ul>
-        <a href="./../../index.html">Homepage</a>
-        <a href="./sign.html">Sign in</a>
-        <a href="./../people/people.html">People</a>
-        <a href="./../reviews/reviews.html">Reviews</a>
-        <a href="./../dating/dating.html">Dating tips</a>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Sign in</h2>
-    <form>
+  <body>
+    <header>
       <div>
-        <label for="gender">I am a:</label>
-        <select id="gender" name="gender">
-          <option value=" ">--Please choose your gender:--</option>
-          <option value="man">Man - Masculine - he and his</option>
-          <option value="woman">Woman - Feminine - she and her</option>
-          <option value="neuter">Non binairy - they and them</option>
-        </select>
+        <img
+          src="./../../app/lovesick_logo.jpeg"
+          alt="Breaking heart"
+          width="100%"
+          height="472"
+        />
+        <h1>Winc Winc Dating App</h1>
       </div>
-    </form>
-    <form>
-      <div>
-        <label for="gender">I am looking for:</label>
-        <select name="gender" id="gender identity">
-          <option value=" ">--Please make a choice:--</option>
-          <option value="man">Man - Masculine - he and his</option>
-          <option value="woman">Woman - Feminine - she and her</option>
-          <option value="both">Man and Woman</option>
-        </select>
-      </div>
-    </form>
-    <form>
-      <div>Looking for age between:
+      <nav>
         <ul>
-          <li><input type="radio" id="young" name="adult" value="young">
-            <label for="Youngadult">Between 18 and 30</label>
-          </li>
-          <li><input type="radio" id="middle" name="adult" value="middle">
-            <label for="Middleadult">Between 30 and 40</label>
-          </li>
-          <li><input type="radio" id="old" name="adult" value="old">
-            <label for="oldadult">Between 40 and up</label>
-          </li>
+          <li><a href="./../../index.html">Homepage</a></li>
+          <li><a href="./sign.html">Sign in</a></li>
+          <li><a href="./../people/people.html">People</a></li>
+          <li><a href="./../reviews/reviews.html">Reviews</a></li>
+          <li><a href="./../dating/dating.html">Dating tips</a></li>
         </ul>
-      </div>
-    </form>
-    <form>
-      <div Class="label">
-        <label for="first name">First name:</label>
-        <input type="text" id="first name" placeholder="first_name" required>
-        <label for="last name">Last name:</label>
-        <input type="text" id="familie name" placeholder="last_name" required>
-      </div>
-      <div class="label">
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" required>
-      </div>
-      <div class="label">
-        <label for="address">Address:</label>
-        <input type="text-numbers" id="address" name="address" placeholder="James Watjestreet_500" required>
-      </div>
-      <div class="label">
-        <label for="postal code">Postal code:</label>
-        <input type="text-numbers" id="postal code" name="postal code" placeholder="1042_BB" required>
-        <label for="residence">Residence:</label>
-        <input type="text" id="residence" name="residence" placeholder="Amsterdam" required>
-      </div>
-      <div class="label">
-        <label for="phone number">Phone number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="030-2255625" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="email@" required>
-      </div>
-      <div class="label">
-        <label for="message">Message:</label>
-        <input type="text" id="message" placeholder="any allergy or other info..">
-      </div><br>
-      <div class="label">
-        <label for="information">Who are you ?</label>
-        <textarea rows="10" cols="60" placeholder="Describe yourself here..."></textarea>
-      </div>
-      <div class="label">
-        <label for="user">User_name (10 characters minimum):</label>
-        <input type="text" id="user" placeholder="user_name" name="username" minlength="10" required />
-      </div>
-      <div class="label">
-        <label for="pass">Password (8 characters minimum):</label>
-        <input type="password" id="pass" value="" name="password" minlength="8" required />
-      </div>
-      <div class="label">
-        <input type="submit" value="Submit" />
-      </div>
-    </form>
-    <h3>Already have an account:</h3>
-    <form>
-      <div>
-        <label for="username">User_name (10 characters minimum):</label>
-        <input type="text" id="username" placeholder="user_name" name="username" minlength="10" required />
-      </div>
-      <div>
-        <label for="pass">Password (8 characters minimum):</label>
-        <input type="password" id="countersign" value="" name="password" minlength="8" required />
-      </div>
-      <div>
-        <input type="submit" value="Sign in" />
-      </div>
-    </form>
-    </div>
-  </main>
-  <footer>
-    <h4>Contact information</h4>
-    Winc Winc Dating App |
-    <a href="mailto:hello@me.com">Email</a> |
-    <a href="tel:+123456789">Phone</a>
-  </footer>
-</body>
+      </nav>
+    </header>
 
+    <main>
+      <h2>Sign in</h2>
+      <form>
+        <!-- Gender Selection -->
+        <div>
+          <label for="gender">I am a:</label>
+          <select id="gender" name="gender">
+            <option value="">--Please choose your gender--</option>
+            <option value="man">Man - Masculine - he/him</option>
+            <option value="woman">Woman - Feminine - she/her</option>
+            <option value="nonbinary">Non-binary - they/them</option>
+          </select>
+        </div>
+
+        <!-- Looking For Selection -->
+        <div>
+          <label for="gender-seeking">I am looking for:</label>
+          <select id="gender-seeking" name="gender-seeking">
+            <option value="">--Please make a choice--</option>
+            <option value="man">Man - Masculine - he/him</option>
+            <option value="woman">Woman - Feminine - she/her</option>
+            <option value="both">Man and Woman</option>
+          </select>
+        </div>
+
+        <!-- Age Range Selection -->
+        <div>
+          <p>Looking for age between:</p>
+          <ul>
+            <li>
+              <input type="radio" id="young" name="age-range" value="young" />
+              <label for="young">Between 18 and 30</label>
+            </li>
+            <li>
+              <input type="radio" id="middle" name="age-range" value="middle" />
+              <label for="middle">Between 30 and 40</label>
+            </li>
+            <li>
+              <input type="radio" id="old" name="age-range" value="old" />
+              <label for="old">40 and up</label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Personal Information -->
+        <div>
+          <label for="first-name">First name:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="First Name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="last-name">Last name:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" required />
+        </div>
+
+        <div>
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Street & Number"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="postal-code">Postal code:</label>
+          <input
+            type="text"
+            id="postal-code"
+            name="postal-code"
+            placeholder="1042 BB"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="residence">Residence:</label>
+          <input
+            type="text"
+            id="residence"
+            name="residence"
+            placeholder="Amsterdam"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="phone">Phone number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{7}"
+            placeholder="030-2255625"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Any allergies or other info..."
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="about">Who are you?</label>
+          <textarea
+            id="about"
+            name="about"
+            rows="6"
+            cols="60"
+            placeholder="Describe yourself here..."
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="username">Username (10 characters minimum):</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            minlength="10"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password">Password (8 characters minimum):</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          />
+        </div>
+
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+
+      <!-- Existing Users Sign-in -->
+      <h3>Already have an account?</h3>
+      <form>
+        <div>
+          <label for="existing-username"
+            >Username (10 characters minimum):</label
+          >
+          <input
+            type="text"
+            id="existing-username"
+            name="existing-username"
+            minlength="10"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="existing-password"
+            >Password (8 characters minimum):</label
+          >
+          <input
+            type="password"
+            id="existing-password"
+            name="existing-password"
+            minlength="8"
+            required
+          />
+        </div>
+
+        <div>
+          <input type="submit" value="Sign in" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <h4>Contact information</h4>
+      Winc Winc Dating App |
+      <a href="mailto:hello@me.com">Email</a> |
+      <a href="tel:+123456789">Phone</a>
+    </footer>
+  </body>
 </html>
